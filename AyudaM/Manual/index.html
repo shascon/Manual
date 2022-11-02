@@ -271,6 +271,15 @@
           <div class="bd-example-snippet bd-code-snippet">
               <div class="bd-example">
                 <p>Instructivo del uso del SAG <br> manuales de inventarios, bodega y intervenciones</p>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
+                  Manual de Inventario
+                </button>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#manualBodega">
+                  Manual de Bodega
+                </button>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#manualIntervencion">
+                  Manual de Intervenciones
+                </button>
               </div>
           </div>
 
@@ -1229,20 +1238,50 @@
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title h4" id="exampleModalFullscreenLabel">Full screen modal</h5>
+        <h5 class="modal-title h4" id="exampleModalFullscreenLabel">Manual de Inventario</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <iframe src="../doc/mInventario.pdf" height="100%" width="100%"></iframe>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
 </div>
-
-
+<div class="modal fade" id="manualBodega" tabindex="-1" aria-labelledby="manualBodegaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h4" id="manualBodegaLabel">Manual de Bodega</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../doc/Mbodega.pdf" height="100%" width="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="manualIntervencion" tabindex="-1" aria-labelledby="manualIntervencionLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h4" id="manualIntervencionLabel">Manual de Intervenciones</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../doc/MIntervenciones.pdf" height="100%" width="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
       <script src="cheatsheet.js"></script>
